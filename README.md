@@ -1,40 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+Doc Viewer - Next.js App
 
-First, run the development server:
+This is a Next.js project that allows users to *view DOCX/PDF files* stored in the `public/docs/` directory. Users can select a document from a list, and it will be displayed in an embedded viewer.
 
-```bash
+Clone the Repository
+using git clone link
+
+
+cd docx-viewer
+
+npm install
+
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now open http://localhost:3000 to see app.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Research & Development (R&D) on DOCX Viewing in Next.js
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Not Use react-doc-viewer(dependancy) ?
+react-doc-viewer does not support Next.js properly due to server-side rendering (SSR) conflicts.
+It depends on browser-based Blob handling.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Not Use mammoth.js?
+mammoth.js can convert .docx to HTML, but it only extracts plain text.
+It does not support images, styles or complex formatting in .docx files.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Use <iframe> ?
+The simplest and most compatible solution to display PDFs and DOCX files.
+Works with Google Docs Viewer for better rendering.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+UI app--
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![image](https://github.com/user-attachments/assets/146ff8a8-6ac0-4349-978b-f9a506a175fa)
+![image](https://github.com/user-attachments/assets/5014ee76-71f5-41ca-b09b-9f0608849a99)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+
+
+
+
+
