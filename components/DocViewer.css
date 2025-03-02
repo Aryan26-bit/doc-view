@@ -1,0 +1,29 @@
+.document-btn {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  background-color: #003049;
+  color: #669bbc;
+}
+
+.reset-btn {
+  margin: 4px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #c1121f;
+  color: #fdf0d5;
+  border-radius: 6px;
+  border: 1px solid #000000;
+}
+
+.selected-doc {
+  border: 1px solid #000000;
+  margin-top: 20px;
+}
+
+.view-document {
+  text-align: center;
+  padding: 20px;
+}
